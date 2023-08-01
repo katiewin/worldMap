@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+    Interactive Map
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="title">
+        <h2>{{title}}</h2> 
+     </header>
+<section>
+    <app-mapsvg class="svg-object"
+        (name)="changeName($event)"
+        (capital)="changeCapital($event)"
+        (region)="changeRegion($event)"
+        (income)="changeIncome($event)"
+        (longitude)="changeLongitude($event)"
+        (latitude)="changeLatitude($event)">
+    </app-mapsvg>
+
+
+    <app-map class="info"
+            [name]="name"
+            [capital]="capital"
+            [region]="region"
+            [income]="income"
+            [longitude]="longitude"
+            [latitude]="latitude">
+    </app-map>
+    
+</section>
+<div class="footer">
+    <h3>API Used</h3>
+    https://api.worldbank.org/v2/country</div>
+</body>
+</html>

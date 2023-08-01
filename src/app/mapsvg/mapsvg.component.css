@@ -1,0 +1,36 @@
+path:hover {
+  fill: #e4b1ab;
+  cursor: pointer;
+}
+
+svg{
+  width: 80%;
+  padding-top: 3rem;
+  margin-left: 2rem;
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:700px) {
+  svg{
+    width: 110%;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width:920px) {
+  svg{
+    width: 140%;
+  }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1130px){
+  svg{
+    width: 180%;
+  }
+}
+
+@media only screen and (min-width: 1130px){
+  svg{
+    width: 200%;
+    margin-left: 4rem;
+  }
+}

@@ -1,0 +1,26 @@
+@media only screen and (min-width: 600px) {
+    section{
+        display: flex; 
+        justify-content: space-between;
+        margin-right: 3rem;
+    }
+}
+
+
+.title{
+  background-color: #e4b1abe7;
+  padding: 2.5rem;
+  width: 50%;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 10px 5px 15px #b88f88;
+  border-radius: 0rem .5rem .5rem 0rem;
+}
+
+.footer{
+  background-color: #e4b1ab;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  margin-top: auto;
+}

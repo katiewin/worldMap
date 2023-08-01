@@ -1,0 +1,14 @@
+
+
+div {
+    background-color: #fbc3bc;
+    padding: .5rem 2rem ;
+    border-radius: .5rem;
+    box-shadow: 10px 5px 17px #d5a69f;
+    margin: 3rem .8rem 2rem ;
+}
+.label{ 
+    font-weight: bold;
+    padding: .5rem;
+}
+

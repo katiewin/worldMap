@@ -1,0 +1,38 @@
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="title">
+  <h2>{{title}}</h2> 
+</header>
+
+<section class="searchSc">
+  <input type="text" [(ngModel)]="input">
+  <button (click)="search(input)" ng-init="count=0">Search</button>
+</section>
+
+
+<div routerLink="countryBlock" class="container">
+  <div (click)='countryCLick(item)' *ngFor="let item of countryName | keyvalue:onCompare let i = index" class="box">
+    <img src='{{ item.value.flags.png }}'>
+    <h2>{{ item.value.name.official }}</h2>
+    <p>Population: {{ item.value.population }}</p>
+    <p>Region: {{ item.value.region }}</p>
+    <p>Capital: {{ item.value.capital }}</p>
+  </div>
+  </div>
+
+
+<footer class="footer">
+  <h3>API Used</h3>
+  https://api.worldbank.org/v2/country</footer>
+
+</body>
+</html>

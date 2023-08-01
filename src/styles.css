@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Bacasime Antique', serif;
+    border-color: transparent;
+
+  }
+
+  html {
+    background-color: rgba(239, 225, 225, 0.801);
+    width: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }

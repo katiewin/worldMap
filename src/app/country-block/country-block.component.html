@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+      </head>
+      <body>
+      
+      <header class="title">
+        <h2>{{title}}</h2> 
+      </header>
+
+    
+      <section>
+       <button (click)="back()">Back</button>
+      </section>
+
+      <section class="section">
+        <img src='{{ flag }}'>
+        <div class="info">
+            <h1>
+                {{officialName}}
+            </h1> 
+            <div class="columns">
+                <div class="left">
+                    <p><b>Native Name: </b>{{nativeName}}</p>
+                    <p><b>Population: </b>{{population}}</p>
+                    <p><b>Region: </b>{{region}}</p>
+                    <p><b>Native Name: </b>{{subregion}}</p>
+                    <p><b>Capital: </b>{{capital}}</p>
+                </div>
+                <div class="right">
+                    <p><b>Top Level Domain: </b> {{tld}}</p>
+                    <p><b>Currencies: </b>{{currencies}}</p>
+                    <p><b>Languages: </b>{{languages}}</p>
+                </div>
+               
+            </div>
+            <div class="border">
+            <p ><b>Border Countries: </b> </p> <button (click)="borderClick(border)" *ngFor='let border of borders' class="borderButton">{{border}}</button>
+            </div>
+    </div>
+
+      </section>
+
+    
+
+      </body>
+
+</html>
+
+

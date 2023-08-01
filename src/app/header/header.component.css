@@ -1,0 +1,22 @@
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+a {
+ float: left;
+ padding: 1rem;
+ font-weight: bold;
+}
+
+a:hover{
+    text-decoration: overline;
+    cursor: pointer;
+}
+
+a:active {
+    color: rgba(58, 56, 56, 0.959);
+}
+
+
