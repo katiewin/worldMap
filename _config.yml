@@ -1,0 +1,11 @@
+# Site settings
+title: Country Search
+author:
+  name: Katie Winthrop
+  email: katiewin28@gmail.com
+description: "Search for Info on different countries."
+
+# Build settings
+remote_theme: pages-themes/primer@v0.2.0
+plugins:
+- jekyll-remote-theme
